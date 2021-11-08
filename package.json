@@ -13,12 +13,11 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
-    "save": "^2.3.1"
+    "save": "^2.3.1",
+    "styled-components": "^5.3.3"
   },
   "scripts": {
-    "prestart": "npm install",
-    "pretest": "npm install",
-    "start": "HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
+    "start": "react-scripts start",
     "test": "rm -rf ./junit.xml && ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
   },
   "devDependencies": {

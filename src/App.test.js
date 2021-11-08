@@ -9,7 +9,7 @@ afterEach(() => {
 });
 
 test('initial UI is rendered as expected', () => {
-  const renderApp = () => render(<App colorPickerOptions={['yellow', 'green', 'red', 'blue', 'white']} initialSelectedColor={'black'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId, queryByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('black');
@@ -23,7 +23,7 @@ test('initial UI is rendered as expected', () => {
 });
 
 test('click on color 1 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');
@@ -39,7 +39,7 @@ test('click on color 1 changes the canvas color', () => {
 });
 
 test('click on color 2 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');
@@ -55,7 +55,7 @@ test('click on color 2 changes the canvas color', () => {
 });
 
 test('click on color 3 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');
@@ -71,7 +71,7 @@ test('click on color 3 changes the canvas color', () => {
 });
 
 test('click on color 4 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');
@@ -87,7 +87,7 @@ test('click on color 4 changes the canvas color', () => {
 });
 
 test('click on color 5 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');
@@ -103,7 +103,7 @@ test('click on color 5 changes the canvas color', () => {
 });
 
 test('click on color 6 changes the canvas color', () => {
-  const renderApp = () => render(<App colorPickerOptions={['olive', 'purple', 'orange', 'black', 'yellow', 'lime']} initialSelectedColor={'red'}/>);
+  const renderApp = () => render(<App />);
   let { getByTestId } = renderApp();
   expect(getByTestId('app-title')).toHaveTextContent("Color Picker");
   expect(getByTestId('selectedColor').style.backgroundColor).toBe('red');

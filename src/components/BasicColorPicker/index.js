@@ -1,0 +1,1 @@
+export { default as BasicColorPicker } from "./BasicColorPicker";
