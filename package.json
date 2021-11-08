@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "test": "rm -rf ./junit.xml && ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
+    "test": "react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
   },
   "devDependencies": {
     "chai": "^4.1.2",

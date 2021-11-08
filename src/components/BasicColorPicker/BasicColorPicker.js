@@ -15,7 +15,7 @@ const ColorPicker = ({ colorPickerOptions, selectedColor, onSelect }) => {
           </ColorContainer>
           <div className="card-actions">
             <div className="layout-row justify-content-center align-items-center" data-testid="colorPickerOptions">
-              {colorPickerOptions.map((color, index) => {
+              {colorPickerOptions.map((color) => {
                 return (
                   <Color
                     key={color}
@@ -34,7 +34,7 @@ const ColorPicker = ({ colorPickerOptions, selectedColor, onSelect }) => {
 }
 
 const Color = styled.button`
-  ${({ color }) => color ? `background: ${color};` : ''}
+  ${({ color }) => color ? `background-color: ${color};` : ''}
     width: 40px;
     height: 40px;
     position: relative;
@@ -46,7 +46,7 @@ const Color = styled.button`
 `;
 
 const ColorContainer = styled.div`
-${({ color }) => color ? `background: ${color};` : ''}  
+${({ color }) => color ? `background-color: ${color};` : ''}  
     width: 100%;
     height: 280px;
     transition: background-color 0.3s ease-in-out;
